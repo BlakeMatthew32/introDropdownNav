@@ -4,36 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
 
-  Features
-  Company
-  Careers
-  About
+    <nav class="nav">
+      <img src="images/logo.svg" alt="snap logo">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#">Features <span><img src="images/icon-arrow-down.svg"></span></a></li>
+        <li class="nav-item"><a href="#">Company <span><img src="images/icon-arrow-down.svg"></span></a></li>
+        <li class="nav-item"><a href="#">Careers</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+      </ul>
+      <div class="nav-buttons">
+        <button class="login-btn nav-btn">Login</button>
+        <button class="dark-btn nav-btn">Register</button>
+      </div>
+    </nav>
 
-  Login
-  Register
+    <main class="main-content">
+      <div class="call-to-action">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+        <button class="action-btn dark-btn">Learn more</button>
+        <div class="client-logos">
+          <img src="images/client-databiz.svg"/>
+          <img src="images/client-audiophile.svg"/>
+          <img src="images/client-meet.svg"/>
+          <img src="images/client-maker.svg"/>
+        </div>
+      </div>
+      <img src="images/image-hero-desktop.png" class="hero-img">
 
-  Make remote work
+    </main>
+  </div>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/blake-dodd-7b8b79221/">Blake Matthew</a>.
   </div>
+
 </body>
 </html>
