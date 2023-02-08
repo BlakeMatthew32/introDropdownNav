@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="index.js" defer></script>
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
@@ -18,7 +20,17 @@
     <nav class="nav">
       <img src="images/logo.svg" alt="snap logo">
       <ul class="nav-items">
-        <li class="nav-item"><a href="#">Features <span><img src="images/icon-arrow-down.svg"></span></a></li>
+        <li class="nav-item nav-dropdown-item">
+          <a href="#" id="features">Features <span><img src="images/icon-arrow-down.svg"></span></a>
+          <div class="dropdown-container">
+            <ul>
+              <li><a href="#"><span><img src="images/icon-todo.svg"><span>  Todo List</a></li>
+              <li><a href="#"><span><img src="images/icon-calendar.svg"><span>  Calendar</a></li>
+              <li><a href="#"><span><img src="images/icon-reminders.svg"><span> Reminders</a></li>
+              <li><a href="#"><span><img src="images/icon-planning.svg"><span> Planning</a></li>
+            </ul>
+          </div>
+        </li>
         <li class="nav-item"><a href="#">Company <span><img src="images/icon-arrow-down.svg"></span></a></li>
         <li class="nav-item"><a href="#">Careers</a></li>
         <li class="nav-item"><a href="#">About</a></li>
