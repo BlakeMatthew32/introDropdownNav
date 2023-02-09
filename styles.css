@@ -15,9 +15,20 @@ body {
 /* Nav bar styles */
 
 .nav {
+    position: relative;
     display: grid;
     grid-template-columns: auto 1fr auto;
     padding: 1.6rem 3rem;
+    align-items: center;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -64,13 +75,24 @@ body {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    width: 160px;
-    left: -80px;
-    top: 2.2rem;
-    border-radius: 0.5rem;
+    padding: 1.2rem 1.2rem;
     background-color: #fff;
-    padding: 1rem 1rem;
-    transition: visibility 0.5s, opacity 0.5s linear;
+    border-radius: 0.5rem;
+    top: 2.2rem;
+    transition: visibility 0, opacity 0.5s linear;
+}
+
+.features-dropdown {
+    width: 165px;
+    left: -80px;
+}
+
+.company-dropdown {
+    width: 120px;
+}
+
+.company-dropdown li {
+    margin-left: 0.5rem;
 }
 
 .active {
@@ -126,6 +148,15 @@ body {
 
 .dark-btn:hover {
     border-color: #000;
+}
+
+
+/* Mobile nav style */
+
+.menu-btn {
+    /* display: none; */
+    position: absolute;
+    right: 1.5rem;
 }
 
 /* Main content styles */
@@ -190,8 +221,6 @@ body {
 .hero-img {
     width: 500px;
     justify-self: end;
-    /* padding: 0; */
-    /* position: relative; */
 }
 
 /* attribution style */
@@ -229,3 +258,75 @@ body {
     width: 100%; 
     left: 0; 
 }
+
+@media only screen and (max-width: 600px) {
+    .brand-logo {
+        position: absolute;
+        left: 1rem;
+    }
+
+    .nav {
+        grid-template-columns: 1fr 1fr;
+        padding: 3rem 4rem;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 20;
+    }
+
+    .menu-btn:hover {
+        cursor: pointer;
+    }
+
+    .nav-items, .nav-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        background-color: white;
+        padding: 20% 0 100%;
+        width: 50%;
+        z-index: 10;
+    }
+
+    .menu-open {
+        display: flex;
+    }
+
+    .nav-items {
+        padding: 0;
+        margin: 0;
+        margin-inline-end: 50%;
+    }
+
+    .nav-item {
+        margin-top: 1.3rem;
+        position: static;
+    }
+
+    .nav-buttons {
+        margin: 2rem auto;
+        width: 90%;
+    }
+
+    .dropdown-container {
+        display: none;
+        position: static;
+        padding: 0;
+        margin: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .active {
+        display: block;
+    }
+   
+} 

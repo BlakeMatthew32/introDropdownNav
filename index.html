@@ -18,27 +18,44 @@
   <div class="container">
 
     <nav class="nav">
-      <img src="images/logo.svg" alt="snap logo">
-      <ul class="nav-items">
-        <li class="nav-item nav-dropdown-item">
-          <a href="#" id="features">Features <span><img src="images/icon-arrow-down.svg"></span></a>
-          <div class="dropdown-container">
-            <ul>
-              <li><a href="#"><span><img src="images/icon-todo.svg"><span>  Todo List</a></li>
-              <li><a href="#"><span><img src="images/icon-calendar.svg"><span>  Calendar</a></li>
-              <li><a href="#"><span><img src="images/icon-reminders.svg"><span> Reminders</a></li>
-              <li><a href="#"><span><img src="images/icon-planning.svg"><span> Planning</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item"><a href="#">Company <span><img src="images/icon-arrow-down.svg"></span></a></li>
-        <li class="nav-item"><a href="#">Careers</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
-      </ul>
-      <div class="nav-buttons">
-        <button class="login-btn nav-btn">Login</button>
-        <button class="dark-btn nav-btn">Register</button>
+
+      <img src="images/logo.svg" alt="snap logo" class="brand-logo">
+      <div class="menu-btn">
+        <img src="images/icon-menu.svg" id="menu-btn-img"/>
       </div>
+      
+      <div class="menu-content">
+        <ul class="nav-items">
+          <li class="nav-item nav-dropdown-item">
+            <a href="#" id="features">Features <span><img src="images/icon-arrow-down.svg" id="arrow-icon-features"></span></a>
+            <div class="dropdown-container features-dropdown">
+              <ul>
+                <li><a href="#"><span><img src="images/icon-todo.svg"><span>  Todo List</a></li>
+                <li><a href="#"><span><img src="images/icon-calendar.svg"><span>  Calendar</a></li>
+                <li><a href="#"><span><img src="images/icon-reminders.svg"><span> Reminders</a></li>
+                <li><a href="#"><span><img src="images/icon-planning.svg"><span> Planning</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-dropdown-item">
+            <a href="#" id="company">Company <span><img src="images/icon-arrow-down.svg" id="arrow-icon-company"></span></a>
+            <div class="dropdown-container company-dropdown">
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#">Careers</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button class="login-btn nav-btn">Login</button>
+          <button class="dark-btn nav-btn">Register</button>
+        </div>
+      </div>
+
     </nav>
 
     <main class="main-content">
