@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -218,9 +223,13 @@ body {
 }
 
 
-.hero-img {
+.hero-img-destop {
     width: 500px;
     justify-self: end;
+}
+
+.hero-img-mobile {
+    display: none;
 }
 
 /* attribution style */
@@ -260,6 +269,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
+    /* nav menu */
+    
     .brand-logo {
         position: absolute;
         left: 1rem;
@@ -291,9 +303,9 @@ body {
         left: 50%;
         top: 0;
         background-color: white;
-        padding: 20% 0 100%;
         width: 50%;
         z-index: 10;
+        border-radius: 0 0 0 1.2rem;
     }
 
     .menu-open {
@@ -302,13 +314,12 @@ body {
 
     .nav-items {
         padding: 0;
-        margin: 0;
+        margin: 35% 0 0;
         margin-inline-end: 50%;
     }
 
     .nav-item {
         margin-top: 1.3rem;
-        position: static;
     }
 
     .nav-buttons {
@@ -318,7 +329,7 @@ body {
 
     .dropdown-container {
         display: none;
-        position: static;
+        position: flex;
         padding: 0;
         margin: 0;
         left: 0;
@@ -326,7 +337,51 @@ body {
     }
 
     .active {
-        display: block;
+        display: flex;
     }
-   
+
+
+    /* main content */
+
+    .main-content {
+        max-width: 100dvw;
+        display: block;
+        padding: 2rem 0 0;
+        margin: 0;
+    }
+    .call-to-action {
+        width: 100dvw;
+        display: block;
+        padding: 0;
+        margin: 2rem 0;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .call-to-action h1 {
+        font-size: 3rem;
+    }
+
+    .call-to-action p {
+        margin: 2rem auto;
+    }
+
+    .hero-img-destop {
+        display: none;
+    }
+
+    .hero-img-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .attribution {
+        margin-top: 4.5rem;
+    }
+
+    .container {
+        background-image: linear-gradient(grey);
+        z-index:2;
+    }
+
 } 
